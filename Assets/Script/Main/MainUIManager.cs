@@ -34,7 +34,7 @@ public class MainUIManager : MonoBehaviour {
         remainText.text = "Remain " + Data.Instance.remain.ToString();
         lifeText.text = "Life " + Data.Instance.life.ToString();
 
-        timeText.text = string.Format("Time:{0:00}:{1:00}.{2:000}" + "\n", deltaTime.Minutes, deltaTime.Seconds, deltaTime.Milliseconds);
+        timeText.text = string.Format("Time {0:00}:{1:00}.{2:000}" + "\n", deltaTime.Minutes, deltaTime.Seconds, deltaTime.Milliseconds);
 
         switch (Data.Instance.gameState) {
             case ENUM.eGameState.GAMEMAIN:

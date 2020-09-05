@@ -24,7 +24,7 @@ public class TitleUIManager : MonoBehaviour {
     /// </summary>
     public void OnClickGameStart() {
 
-        SceneManager.LoadScene(Define.GAMEMAIN, LoadSceneMode.Additive);
+        SceneManager.LoadScene(Define.GAMEMAIN);
         Data.Instance.gameState = ENUM.eGameState.GAMEMAIN;
     }
 

@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour {
     private bool lastgGameStateFlg;
 
 
+    void Awake() {
+//        Camera.main.transform.position = new Vector3(0, 0, 0);
+    }
+
     // Update is called once per frame
     void Update() {
 
@@ -110,7 +114,7 @@ public class GameManager : MonoBehaviour {
     /// </summary>
     public void OnClickGameTitle() {
 
-        UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(Define.GAMEMAIN);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(Define.GAMETITLE);
         Data.Instance.gameState = ENUM.eGameState.GAMETITLE;
     }
 
