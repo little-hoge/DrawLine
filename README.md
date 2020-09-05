@@ -38,5 +38,4 @@ http://musmus.main.jp/
 - 音量設定時テスト再生
 - 現音量スライダー反映
 - 障害物追加
-- WebGLのみシーン遷移時カメラ異常になる調査  
-※UnityWebglResponsiveTemplate使うと発生しない
+- WebGLのみカメラ異常
