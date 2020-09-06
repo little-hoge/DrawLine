@@ -6,11 +6,16 @@ using ENUM;
 
 // PC画面サイズ設定
 public class GameInitial {
+#if UNITY_WEBGL
+
+
+#else
     [RuntimeInitializeOnLoadMethod]
     static void OnRuntimeMethodLoad() {
         Screen.SetResolution(Define.SCREEN_X, Define.SCREEN_Y, false, Define.FPS);
 
     }
+#endif
 
 }
 
@@ -23,7 +28,7 @@ public static class Define {
 
 
     // 
-    public const int SCREEN_X = (480), SCREEN_Y = (864), FPS = (30);  // 画面設定 
+    public const int SCREEN_X = (480), SCREEN_Y = (854), FPS = (30);  // 画面設定 
     public const int LIFEMAX = (10);
     public const int REMAINMAX_NORMAL = (50);
     public const int REMAINMAX_HARD = (100);
