@@ -34,6 +34,9 @@ https://unityroom.com/games/drawline
 - BGM・フリー音楽素材 MusMus  
 http://musmus.main.jp/
 
+- SoundManagerのC＃スクリプト
+https://00m.in/Lp0Up
+
 # 未実装/課題
 - 音量設定時テスト再生
 - 現音量スライダー反映
