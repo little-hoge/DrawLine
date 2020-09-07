@@ -24,7 +24,7 @@
 [<img src="https://user-images.githubusercontent.com/3638785/92312454-a9092500-effb-11ea-84f3-56bffa5d479c.gif" width=50%>](https://little-hoge.github.io/DrawLine/)
 
 #### Android版
-[DrawLine.apk](https://github.com/little-hoge/DrawLine/releases/download/1.0/DrawLine.apk)
+[DrawLine.apk](https://github.com/little-hoge/DrawLine/releases/download/1.01/DrawLine.apk)
 
 # 開発環境
 - Windows10 64bit
@@ -55,7 +55,7 @@ https://unityroom.com/games/drawline
 - BGM・フリー音楽素材 MusMus  
 http://musmus.main.jp/
 
-- SoundManagerのC＃スクリプト
+- SoundManagerのC＃スクリプト  
 https://00m.in/Lp0Up
 
 # 未実装/課題
