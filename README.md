@@ -16,7 +16,8 @@
 <!-- /TOC -->
 
 # 操作方法
-クリック or タップ：ラインを引く
+- 左クリック or タップ：ラインを引く
+- 右クリック or マルチタップ：キャンセル
 
 # デモ
 [DrawLine](https://little-hoge.github.io/DrawLine/)  

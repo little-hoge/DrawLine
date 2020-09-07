@@ -23,9 +23,7 @@ public class MainUIManager : MonoBehaviour {
 
     // 初期化
     void Start() {
-
         GaameScoreInit();
-
     }
 
 

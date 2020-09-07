@@ -45,11 +45,11 @@ public class LineManager : MonoBehaviour {
 
         // 頂点の数を決める
         this.lineGhostRenderer.positionCount = 2;
+
     }
 
-
     /// <summary>
-    /// 線オブジェクトの追加予定位置表示の更新
+    /// 描く線の追加予定位置表示の更新
     /// </summary>
     public void GhostLineUpdata() {
         // 座標の変換を行いマウス位置を取得
@@ -62,7 +62,7 @@ public class LineManager : MonoBehaviour {
     }
 
     /// <summary>
-    /// 描く線のコンポーネントリストに位置情報の更新
+    /// 描く線の開始位置情報の更新
     /// </summary>
     public void LineStartPositionUpdata() {
 
@@ -73,7 +73,7 @@ public class LineManager : MonoBehaviour {
     }
 
     /// <summary>
-    /// 描く線のコンポーネントリストに位置情報の更新
+    /// 描く線の終了位置情報の更新
     /// </summary>
     public void LineEndPositionUpdata() {
 
@@ -88,7 +88,7 @@ public class LineManager : MonoBehaviour {
     }
 
     /// <summary>
-    /// 線オブジェクトの追加予定位置表示の初期化
+    /// 描く線の追加予定位置表示の初期化
     /// </summary>
     public void GhostLineInit() {
         // 座標の変換を行いマウス位置を取得
@@ -102,7 +102,7 @@ public class LineManager : MonoBehaviour {
     }
 
     /// <summary>
-    /// 線オブジェクトの当たり判定追加
+    /// 描く線の当たり判定追加
     /// </summary>
     public void AddEdgeCollider() {
         Vector2[] points = new Vector2[2];
@@ -121,24 +121,24 @@ public class LineManager : MonoBehaviour {
     }
 
     /// <summary>
-    /// 線オブジェクトの削除
+    /// 描く線の非表示
     /// </summary>
-    public void DeleteLineObject() {
+    public void DrawLineStateChange() {
 
         // 半透明
         if (lineRendererList.Count > 1) {
             lineRendererList[lineRendererList.Count - 2].material.color -= new Color(0, 0, 0, 0.8f);
         }
-        // 削除
+        // 非表示
         if (lineRendererList.Count > 2) {
             lineObject[lineRendererList.Count - 3].SetActive(false);
         }
     }
 
     /// <summary>
-    /// 線オブジェクトの追加
+    /// 描く線の追加
     /// </summary>
-    public void AddLineObject() {
+    public void AddLine() {
 
         // 追加するオブジェクトをインスタンス
         lineObject.Add(new GameObject());
@@ -165,9 +165,9 @@ public class LineManager : MonoBehaviour {
     }
 
     /// <summary>
-    /// 線オブジェクトの全削除
+    /// 描く線の全削除
     /// </summary>
-    public void AllDeleteLineObject() {
+    public void AllDeleteLine() {
 
         for (int i = 0; i < lineRendererList.Count; i++) {
             Destroy(lineRendererList[i]);
@@ -186,11 +186,11 @@ public class LineManager : MonoBehaviour {
     }
 
     /// <summary>
-    /// 線オブジェクトのキャンセル
+    /// 描く線のキャンセル
     /// </summary>
-    public void DeleteLineCancelObject() {
+    public void DeleteLineCancel() {
 
-        // 
+        // 作成予定位置初期化
         GhostLineInit();
 
     }
