@@ -606,7 +606,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.459
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -3043,7 +3043,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7547392345365572132}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &8250342880332348544
 GameObject:
   m_ObjectHideFlags: 0

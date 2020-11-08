@@ -15,6 +15,17 @@ public class VolumeController : MonoBehaviour {
     void Start() {
         slider = GetComponent<Slider>();
         soundManager = FindObjectOfType<SoundManager>();
+        switch (volumeType) {
+            case VolumeType.MASTER:
+                slider.value = soundManager.Volume;
+                break;
+            case VolumeType.BGM:
+                slider.value = soundManager.BgmVolume;
+                break;
+            case VolumeType.SE:
+                slider.value = soundManager.SeVolume;
+                break;
+        }
     }
 
     public void OnValueChanged() {

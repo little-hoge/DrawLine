@@ -3074,6 +3074,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: NCMBSettings
       objectReference: {fileID: 0}
+    - target: {fileID: 6577221842881284367, guid: 0700d1b162ba41f48ab1fd037a36cd45,
+        type: 3}
+      propertyPath: applicationKey
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577221842881284367, guid: 0700d1b162ba41f48ab1fd037a36cd45,
+        type: 3}
+      propertyPath: clientKey
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1064563055969499817, guid: 0700d1b162ba41f48ab1fd037a36cd45,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3128,16 +3138,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577221842881284367, guid: 0700d1b162ba41f48ab1fd037a36cd45,
-        type: 3}
-      propertyPath: applicationKey
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577221842881284367, guid: 0700d1b162ba41f48ab1fd037a36cd45,
-        type: 3}
-      propertyPath: clientKey
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0700d1b162ba41f48ab1fd037a36cd45, type: 3}
